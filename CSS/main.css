@@ -1,0 +1,18 @@
+h1{
+    background-color: blue;
+}
+
+main div{
+    border: 1px solid #000000;
+}
+
+header nav ul li a{
+    display: block;
+    text-decoration:  none;
+    background-color: hotpink;
+}
+header nav ul li a:hover{
+    text-decoration:  none;
+    color:  green;
+    transition:backgroundcolor ease-in-out 2.0;
+}
