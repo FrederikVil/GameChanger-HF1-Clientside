@@ -1,42 +1,230 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Game Changer 2020</title>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> 
-        <link href="bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-        <link href="bootstrap-4.4.1-dist/js/bootstrap.js" rel="stylesheet" type="text/css">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
 
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="">Menu 1</a></li>
-                    <li><a href="">Menu 2</a></li>
-                    <li><a href="">Menu 3</a></li>
-                    <li><a href="">Menu 4</a></li>
-                </ul>
-            </nav>
-            <div>Logo</div>
-        </header>
-        <main>
-            <div id="div1">
-                <h1>Game Changer 2020 - Velkommen</h1>
-                <p>Velkommen til min hjememside</p>
-            </div>
-            <div id="div2">
-                <h1>Artikel 2</h1>
-                <p>Det her er artikel 2</p>
-            </div>
-        </main>
-        <footer>
-            &copy; Game Changer 2020
-        </footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap-4.4.1-dist/css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 
-       
-    
-    </body>
+    <title>Game Changer 2020</title>
+
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-sm-13">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="css/img/Slidebanner/banner_assasins_creed_2.jpg" alt="Assassins creed">
+                            <div class="carousel-caption">
+                                <h3>ASSASSINS CREED</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="col-sm-2 text infobox">
+                                <h3><br /><br /><br /><br /><br /><br />ASSASSINS CREED</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="css/img/Slidebanner/banner_forza4.jpg" alt="FORZA">
+                            <div class="carousel-caption">
+                                <h3>FORZA 4</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="col-sm-2 text infobox">
+                                <h3><br /><br /><br /><br /><br /><br />FORZA</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="CSS/img/Slidebanner/banner_gta5.jpg" alt="GTA5">
+                            <div class="carousel-caption">
+                                <h3>GTA 5</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="col-sm-2 text infobox">
+                                <h3><br /><br /><br /><br /><br /><br />GTA 5</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+
+                <div>
+                    <nav class="navbar-dark navbar-expand-sm bg-dark justify-content-center fixed-top">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">FORSIDE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">SPIL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">ANMELDELSER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">KONTAKT</a>
+                            </li>
+                        </ul>
+
+                        <label for="side">Gå til side</label>
+                        <select id="side">
+                            <option value="">FORSIDE</option>
+                            <option value="">SPIL</option>
+                            <option value="">ANMELDELSER</option>
+                            <option value="">KONTAKT</option>
+                        </select>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container gamethumbs">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 thumb">
+                <a class="thumbnail" href="">
+                    <img class="img-responsive" src="CSS/img/Thumbs/thumb_splintercell.jpg" alt="">
+                    <div class="thumbtext">
+                        <p>Splinter Cell</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 thumb">
+                <a class="thumbnail" href="">
+                    <img class="img-responsive" src="CSS/img/Thumbs/thumb_gtav.jpg" alt="">
+                    <div class="thumbtext">
+                        <p>Grand Theft Auto 5</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 thumb">
+                <a class="thumbnail" href="">
+                    <img class="img-responsive" src="CSS/img/Thumbs/thumb_call_of_duty.jpg" alt="">
+                    <div class="thumbtext">
+                        <p>Call Of Duty: Ghost</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 thumb">
+                <a class="thumbnail" href="">
+                    <img class="img-responsive" src="CSS/img/Thumbs/thumb_forza4.jpg" alt="">
+                    <div class="thumbtext">
+                        <p>Forza 4</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 thumb">
+                <a class="thumbnail" href="">
+                    <img class="img-responsive" src="CSS/img/Thumbs/thumb_red_dead_redemption.jpg" alt="">
+                    <div class="thumbtext">
+                        <p>Red Dead Redemp</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 thumb">
+                <a class="thumbnail" href="">
+                    <img class="img-responsive" src="CSS/img/Thumbs/thumb_halo4.jpg" alt="">
+                    <div class="thumbtext">
+                        <p>Halo 4</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12 border">
+                <div class="cod-trailer">
+                    <li>
+                        <h2>Seneste Trailer</h2>
+                        <iframe width="100%" height="485" src="https://www.youtube.com/embed/Zxnx3W-HA18"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <h3>Call of Duty Trailer</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut
+                            aliquip
+                            ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="">Læs Mere</a>
+                    </li>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 border">
+                <div class="cod-trailer h2">
+                    <h2>Mest Populære Spil</h2>
+
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 thumb gamelist">
+                    <a class="thumbnail" href="">
+                        <img class="img-responsive" src="CSS/img/Thumbs/thumb_splintercell.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 thumb gamelist">
+                    <a class="thumbnail" href="">
+                        <img class="img-responsive" src="CSS/img/Thumbs/thumb_gtav.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 thumb gamelist">
+                    <a class="thumbnail" href="">
+                        <img class="img-responsive" src="CSS/img/Thumbs/thumb_call_of_duty.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 thumb gamelist">
+                    <a class="thumbnail" href="">
+                        <img class="img-responsive" src="CSS/img/Thumbs/thumb_forza4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 thumb gamelist">
+                    <a class="thumbnail" href="">
+                        <img class="img-responsive" src="CSS/img/Thumbs/thumb_red_dead_redemption.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 thumb gamelist">
+                    <a class="thumbnail" href="">
+                        <img class="img-responsive" src="CSS/img/Thumbs/thumb_halo4.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
+
+

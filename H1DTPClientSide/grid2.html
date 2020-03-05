@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Det titlen siden</title>
+
+        <!--Bootstrap CSS--><link href='css/bootstrap-reboot.min.css' rel='stylesheet' type='text/css'> 
+        <!--Bootstrap CSS--><link href='css/bootstrap-grid.min.css' rel='stylesheet' type='text/css'> 
+        <!--Bootstrap JS--><script src="js/bootstrap.min.js"></script>
+        <style>
+            .border{border:1px solid #000;}
+            .red{color:red;}
+            .center-text{text-align: center;}
+            #top-banner{
+                min-height:300px;
+                background-image: url(img/Slidebanner/banner_assasins_creed_2.jpg);
+                background-size: cover;
+            }
+
+            @media screen and (max-width: 768px) {
+                body {
+                    background-color: lightgreen;
+                }
+                aside, #top-banner{
+                    display: none;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <header class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 border" id="top-banner">
+                    Logo
+                </div>
+            </div>
+        </header>
+        <main class="border container">
+            <div class="row">
+                <div class="col-md-8 border">
+                    <div class="row">
+                        <article class="col-md-4">
+                            <h1>Overskrift på artikel 1</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet placerat enim, vel blandit elit sagittis sit amet.</p>
+                        </article>
+                        <article class="col-md-4">
+                            <h1>Overskrift på artikel 1</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet placerat enim, vel blandit elit sagittis sit amet.</p>
+                        </article>
+                        <article class="col-md-4">
+                            <h1>Overskrift på artikel 1</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet placerat enim, vel blandit elit sagittis sit amet.</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-4 border">
+                    <aside>
+                        <div class="row">
+                            <article class="col-sm-12">
+                                <h1>Overskrift på artikel 1</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet placerat enim, vel blandit elit sagittis sit amet.</p>
+                            </article>
+                        </div>
+                        <div class="row">
+                            <article class="col-sm-12">
+                                <h1>Overskrift på artikel 1</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet placerat enim, vel blandit elit sagittis sit amet.</p>
+                            </article>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </main>
+        <footer class="border container">
+            <div class="row">
+                <div class="col-sm-12 center-text">&copy; Copyright...</div>
+            </div>
+        </footer>
+    </body>
+</html>
